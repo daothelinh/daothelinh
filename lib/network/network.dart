@@ -11,10 +11,4 @@ class NetworkConstants {
   static const int connectionTimeout = 5000;
 }
 
-// ***Assets
-// class Assets {
-//   Assets._();
 
-//   static const $AssetsIconsGen icons = $AssetsIconsGen();
-//   static const $AssetsImagesGen images = $AssetsImagesGen();
-// }

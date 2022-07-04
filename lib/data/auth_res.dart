@@ -27,10 +27,10 @@ class AssessorInfo {
     required this.phoneNumber,
     required this.region,
   });
-  String assessorId;
-  String fullName;
-  String region;
-  String phoneNumber;
+  String? assessorId;
+  String? fullName;
+  String? region;
+  String? phoneNumber;
   factory AssessorInfo.fromJson(Map<String, dynamic> json) => AssessorInfo(
         assessorId: json["assessorId"],
         fullName: json["fullName"],

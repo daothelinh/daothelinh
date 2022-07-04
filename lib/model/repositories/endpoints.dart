@@ -1,10 +1,11 @@
 import 'package:flutter_flavor/flutter_flavor.dart';
- 
+
 class Endpoints {
   Endpoints._();
- 
-  static String baseUrl = FlavorConfig.instance.variables['url'];
- 
+
+  // static String baseUrl = FlavorConfig.instance.variables['url'];
+  static String baseUrl = 'https://dev-api-insurance.aicycle.ai';
+
   static String login = baseUrl + '/assessors/login';
   static String register = baseUrl + '/assessors/register';
   static String checkExisted = baseUrl + '/assessors/check-existed';
@@ -23,7 +24,7 @@ class Endpoints {
   static String getFoldersFromServer(String id) =>
       baseUrl + '/folders/$id/categories';
   // baseUrl + '/folders/$id/all-images';
- 
+
   static String uploadFolders = baseUrl + '/categories/';
   static String deleteCategories(String id) =>
       baseUrl + '/folders/$id/categories';
@@ -33,7 +34,7 @@ class Endpoints {
   static String uploadImages = baseUrl + '/images';
   static String uploadMasks(int id) => baseUrl + '/images/$id/masks';
   static String deleteImg(int id) => baseUrl + '/images/$id';
- 
+
   // Claim - Test Engine Mode
   static String getClaims = baseUrl + '/claimfolders/filter';
   static String getVehicleBrands = baseUrl + '/carbrands';
@@ -50,9 +51,9 @@ class Endpoints {
       baseUrl + '/claimimages/all/$claimID';
   static String deleteAllImageInClaim(String claimID) =>
       baseUrl + '/claimimages/all/$claimID';
- 
+
   static String callEngine = baseUrl + '/claimimages/run_engine';
- 
+
   // AI mode
   static String callEngineAfterTakePhoto =
       baseUrl + '/claimimages/damage-assessment';

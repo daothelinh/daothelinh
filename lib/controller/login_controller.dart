@@ -83,7 +83,6 @@ class LoginController extends GetxController {
       );
       loading.value = false;
     } catch (e) {
-      logger.e(e);
       loading.value = false;
     }
   }
