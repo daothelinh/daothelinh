@@ -98,7 +98,7 @@ class CommonButton extends StatelessWidget {
       ),
       child: CupertinoButton(
         //color: backgroudColor ?? _backgroundColor,
-        color: Colors.blue,
+        color: Color.fromARGB(255, 123, 54, 137),
         padding: padding,
         minSize: 0,
         child: child ??
@@ -107,7 +107,6 @@ class CommonButton extends StatelessWidget {
               //style: t16B.apply(color: textColor),
             ),
         onPressed: buttonType == ButtonType.disabled ? null : onPressed,
-        
       ),
     );
   }

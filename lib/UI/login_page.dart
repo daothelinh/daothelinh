@@ -2,7 +2,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:login_ui_aicycle_seta/UI/new_page.dart';
 import 'package:login_ui_aicycle_seta/common_field/common_button.dart';
 import 'package:login_ui_aicycle_seta/common_field/common_textfield.dart';
 import 'package:login_ui_aicycle_seta/controller/login_controller.dart';

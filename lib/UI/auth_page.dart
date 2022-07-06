@@ -39,6 +39,7 @@ class AuthPage extends GetView<AuthController> {
             AppStrings.welcomeText,
             textAlign: TextAlign.center,
             style: TextStyle(
+              fontFamily: 'SVN-Gilroy',
               color: Colors.white,
               fontSize: 18,
               //fontStyle: FontStyle.italic,
@@ -51,6 +52,7 @@ class AuthPage extends GetView<AuthController> {
             AppStrings.appName,
             textAlign: TextAlign.center,
             style: TextStyle(
+              fontFamily: 'SVN-Gilroy',
               fontSize: 30,
             ),
           )
