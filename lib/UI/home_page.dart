@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:login_ui_aicycle_seta/UI/auth_page.dart';
-import 'package:login_ui_aicycle_seta/UI/login_page.dart';
 import 'package:login_ui_aicycle_seta/controller/auth_controller.dart';
 
 class HomePage extends StatelessWidget {
