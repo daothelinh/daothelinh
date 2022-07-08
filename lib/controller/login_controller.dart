@@ -9,6 +9,7 @@ import 'package:login_ui_aicycle_seta/services/process_usecase.dart';
 import 'package:login_ui_aicycle_seta/services/snackbar.dart';
 import 'package:login_ui_aicycle_seta/usecase/do_login.dart';
 import 'package:login_ui_aicycle_seta/usecase/shared_preferences.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginController extends GetxController {
   final DoLogin doLogin;
@@ -84,6 +85,19 @@ class LoginController extends GetxController {
       loading.value = false;
     } catch (e) {
       loading.value = false;
+    }
+  }
+
+  doLogout() async {
+    // var auth = FirebaseAuth.instance;
+    var sharedPreferenceHelper = await SharedPreferences.getInstance();
+    try {
+      // await auth.signOut();
+      await sharedPreferenceHelper.clear();
+      LocalStorageService().removeAll();
+      Get.offAllNamed(Routes.auth);
+    } catch (e) {
+      Snackbar.show(type: SnackbarType.error, message: e.toString());
     }
   }
 }

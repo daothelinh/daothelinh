@@ -2,6 +2,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:login_ui_aicycle_seta/UI/routes.dart';
 import 'package:login_ui_aicycle_seta/common_field/common_button.dart';
 import 'package:login_ui_aicycle_seta/common_field/common_textfield.dart';
 import 'package:login_ui_aicycle_seta/controller/login_controller.dart';
@@ -12,6 +13,10 @@ import 'package:login_ui_aicycle_seta/strings/strings.dart';
 class LoginPage extends GetView<LoginController> {
   const LoginPage({Key? key}) : super(key: key);
   //final usernameController = Get.find<LoginController>();
+  // Future signIn() async{
+  //   await baseUrl.;
+  // }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -95,18 +100,21 @@ class LoginPage extends GetView<LoginController> {
               ),
             ),
             const Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: EdgeInsets.all(9.0),
               child: SizedBox(
-                // height: 50,
-                width: double.infinity,
+                height: 50,
+                width: double.maxFinite,
                 child: CupertinoButton(
                   child: Text(
                     AppStrings.forgetPassword,
                     style: TextStyle(
-                      color: Colors.blue,
+                      color: Color.fromARGB(255, 123, 54, 137),
                     ),
                   ),
                   onPressed: null,
+                  //  () {
+                  //   Get.toNamed(Routes.forgotPassword);
+                  // },
                   alignment: Alignment.centerRight,
                 ),
               ),
