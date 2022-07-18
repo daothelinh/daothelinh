@@ -1,6 +1,7 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:login_ui_aicycle_seta/UI/auth_page.dart';
 import 'package:login_ui_aicycle_seta/UI/home_page.dart';
+import 'package:login_ui_aicycle_seta/UI/password_resetter_page.dart';
 import 'package:login_ui_aicycle_seta/binding/auth_binding.dart';
 import 'package:login_ui_aicycle_seta/binding/repository_binding.dart';
 import 'package:login_ui_aicycle_seta/binding/usecase_binding.dart';
@@ -28,6 +29,14 @@ class Routes {
       name: home,
       page: () => const HomePage(),
     ),
-    GetPage(name: forgotPassword, page: () => const HomePage())
+    GetPage(name: forgotPassword, page: () => const HomePage()),
+    GetPage(
+        name: changePassword,
+        page: () => PasswordResetterPage(),
+        bindings: [
+          RepositoryBinding(),
+          UseCaseBinding(),
+          AuthBindings(),
+        ])
   ];
 }

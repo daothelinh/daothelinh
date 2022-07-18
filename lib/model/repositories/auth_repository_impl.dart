@@ -4,6 +4,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:login_ui_aicycle_seta/data/auth_repository.dart';
 import 'package:login_ui_aicycle_seta/data/auth_res.dart';
+import 'package:login_ui_aicycle_seta/model/change_password_res.dart';
 import 'package:login_ui_aicycle_seta/model/repositories/endpoints.dart';
 import 'package:login_ui_aicycle_seta/model/restful/restful_module.dart';
 import 'package:login_ui_aicycle_seta/services/logger_service.dart';
@@ -56,19 +57,19 @@ class AuthRepositoryImpl implements AuthRepository {
   //   }
   // }
 
-  // @override
-  // Future<Either<Failure, ChangePasswordRes>> changePassword(
-  //     {required String phoneNumber, required String newPassword}) async {
-  //   try {
-  //     var response = await getConnect.post(Endpoints.changePassword,
-  //         {"phoneNumber": phoneNumber, "password": newPassword});
-  //     var result = response.body;
-  //     return Right(ChangePasswordRes.fromJson(result));
-  //   } catch (e) {
-  //     logger.e(e);
-  //     return Left(SystemFailure(message: e.toString()));
-  //   }
-  // }
+  @override
+  Future<Either<Failure, ChangePasswordRes>> changePassword(
+      {required String phoneNumber, required String newPassword}) async {
+    try {
+      var response = await getConnect.post(Endpoints.changePassword,
+          {"phoneNumber": phoneNumber, "password": newPassword});
+      var result = response.body;
+      return Right(ChangePasswordRes.fromJson(result));
+    } catch (e) {
+      logger.e(e);
+      return Left(SystemFailure(message: e.toString()));
+    }
+  }
 
   @override
   Future<Either<Failure, bool>> checkExisted(

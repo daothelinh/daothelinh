@@ -13,4 +13,16 @@ class AppStrings {
   static const String password = "Mật khẩu";
   static const String forgetPassword = "Quên mật khẩu";
   static const String logIn = "Đăng nhập";
+
+  //home_page
+  static const String changePassword = "Đổi mật khẩu";
+  static const String logOut = "Đăng xuất";
+
+  //change_password
+  static const String createNewPassword = "Đặt lại mật khẩu mới cho tài khoản";
+  static const String doneNewPassword = "Hoàn thành";
+  static const String passwordNow = "Mật khẩu hiện tại";
+  static const String newPassword = "Mật khẩu mới";
+  static const String rewriteNewPassword = " Nhập lại mật khẩu mới";
+  static const String confirmPasswordError = "Mật khẩu nhập lại không đúng";
 }
