@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:login_ui_aicycle_seta/UI/password_resetter_page.dart';
+import 'package:login_ui_aicycle_seta/UI/routes.dart';
 import 'package:login_ui_aicycle_seta/controller/auth_controller.dart';
 import 'package:login_ui_aicycle_seta/controller/home_controller.dart';
 import 'package:login_ui_aicycle_seta/services/local_storage_service.dart';
@@ -21,18 +23,18 @@ class PersonDrawer extends GetView<HomeController> {
                 child: Text(' ${_user?.fullName}'),
               ),
             ),
-            const ListTile(
-              leading: Icon(Icons.lock),
-              title: Text(
+            ListTile(
+              leading: const Icon(Icons.lock),
+              title: const Text(
                 AppStrings.changePassword,
                 style: TextStyle(
                   fontFamily: 'SVN-Gilroy',
                   fontSize: 18,
                 ),
               ),
-              // onTap: () {
-              //   PasswordResetterPage();
-              // },
+              onTap: () {
+                Get.toNamed(Routes.changePassword);
+              },
             ),
             ListTile(
               leading: const Icon(Icons.logout_outlined),

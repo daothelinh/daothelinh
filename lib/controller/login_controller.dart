@@ -17,6 +17,7 @@ class LoginController extends GetxController {
   //final GetDamageTypes getDamageTypes;
   LoginController({
     required this.doLogin,
+    changePassword,
     //required this.changePassword,
     //required this.getDamageTypes,
   });

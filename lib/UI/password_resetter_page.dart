@@ -18,6 +18,7 @@ class PasswordResetterPage extends GetView<ChangePasswordController> {
   @override
   Widget build(BuildContext context) {
     final appBar = AppBar(
+      backgroundColor: Colors.deepPurple[200],
       automaticallyImplyLeading: false,
       elevation: 0.0,
       centerTitle: true,
@@ -25,14 +26,17 @@ class PasswordResetterPage extends GetView<ChangePasswordController> {
         AppStrings.changePassword,
         style: TextStyle(
           fontFamily: 'SVN-Gilroy',
-          fontSize: 18,
+          fontSize: 20,
         ),
       ),
       leading: CupertinoButton(
         onPressed: (() {
           Get.back();
         }),
-        child: const Icon(Icons.keyboard_backspace_outlined),
+        child: const Icon(
+          Icons.keyboard_backspace_outlined,
+          color: Colors.white,
+        ),
       ),
     );
     return GestureDetector(
@@ -41,7 +45,7 @@ class PasswordResetterPage extends GetView<ChangePasswordController> {
         appBar: appBar,
         body: SafeArea(
           child: Padding(
-            padding: EdgeInsets.all(16),
+            padding: const EdgeInsets.all(16),
             child: Form(
               key: _formKey,
               child: Column(
