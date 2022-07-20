@@ -73,9 +73,12 @@ class PasswordResetterPage extends GetView<ChangePasswordController> {
                       ),
                     ),
                   ),
-                  CommonButton(
-                    onPressed: _runUpdatePassword,
-                    text: AppStrings.doneNewPassword,
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: CommonButton(
+                      onPressed: _runUpdatePassword,
+                      text: AppStrings.doneNewPassword,
+                    ),
                   )
                 ],
               ),

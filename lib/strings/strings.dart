@@ -23,6 +23,6 @@ class AppStrings {
   static const String doneNewPassword = "Hoàn thành";
   static const String passwordNow = "Mật khẩu hiện tại";
   static const String newPassword = "Mật khẩu mới";
-  static const String rewriteNewPassword = " Nhập lại mật khẩu mới";
+  static const String rewriteNewPassword = "Nhập lại mật khẩu mới";
   static const String confirmPasswordError = "Mật khẩu nhập lại không đúng";
 }
