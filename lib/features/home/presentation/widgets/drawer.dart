@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:login_ui_aicycle_seta/UI/password_resetter_page.dart';
+import 'package:login_ui_aicycle_seta/features/home/presentation/widgets/password_resetter_page.dart';
 import 'package:login_ui_aicycle_seta/routes.dart';
 import 'package:login_ui_aicycle_seta/features/auth/presentation/controller/auth_controller.dart';
 import 'package:login_ui_aicycle_seta/features/home/presentation/controller/home_controller.dart';

@@ -1,5 +1,5 @@
-import 'package:login_ui_aicycle_seta/model/common_request_options.dart';
-import 'package:login_ui_aicycle_seta/model/common_response.dart';
+import 'package:login_ui_aicycle_seta/common/common_request_options.dart';
+import 'package:login_ui_aicycle_seta/common/common_response.dart';
 
 abstract class RestfulModule {
   Future<String?> get authToken;

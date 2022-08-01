@@ -1,10 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:get/get_connect/connect.dart';
-import 'package:login_ui_aicycle_seta/model/common_request_options.dart';
-import 'package:login_ui_aicycle_seta/model/common_response.dart';
-import 'package:login_ui_aicycle_seta/model/restful/restful_module.dart';
+import 'package:login_ui_aicycle_seta/common/common_request_options.dart';
+import 'package:login_ui_aicycle_seta/common/common_response.dart';
 import 'package:login_ui_aicycle_seta/core/services/local_storage_service.dart';
 import 'package:login_ui_aicycle_seta/core/services/logger_service.dart';
+import 'package:login_ui_aicycle_seta/restful/restful_module.dart';
 
 class RestfulModuleImpl implements RestfulModule {
   final GetConnect getConnect =

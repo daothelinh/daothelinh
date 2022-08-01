@@ -6,9 +6,9 @@ import 'package:login_ui_aicycle_seta/core/values/endpoints.dart';
 import 'package:login_ui_aicycle_seta/features/auth/domain/repositories/auth_repository.dart';
 import 'package:login_ui_aicycle_seta/features/auth/data/models/auth_res.dart';
 import 'package:login_ui_aicycle_seta/features/home/data/models/change_password_res.dart';
-import 'package:login_ui_aicycle_seta/model/restful/restful_module.dart';
 import 'package:login_ui_aicycle_seta/core/services/logger_service.dart';
 import 'package:login_ui_aicycle_seta/core/failures/failure.dart';
+import 'package:login_ui_aicycle_seta/restful/restful_module.dart';
 
 class AuthRepositoryImpl implements AuthRepository {
   final GetConnect getConnect;
