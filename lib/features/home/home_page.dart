@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:login_ui_aicycle_seta/UI/drawer.dart';
-import 'package:login_ui_aicycle_seta/controller/home_controller.dart';
-import 'package:login_ui_aicycle_seta/services/local_storage_service.dart';
+import 'package:login_ui_aicycle_seta/features/home/presentation/widgets/drawer.dart';
+import 'package:login_ui_aicycle_seta/features/home/presentation/controller/home_controller.dart';
+import 'package:login_ui_aicycle_seta/core/services/local_storage_service.dart';
 
 class HomePage extends GetView<HomeController> {
   const HomePage({Key? key}) : super(key: key);

@@ -1,11 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_flavor/flutter_flavor.dart';
 import 'package:get/get.dart';
-import 'package:login_ui_aicycle_seta/data/auth_res.dart';
-import 'package:login_ui_aicycle_seta/services/local_storage_service.dart';
-import 'package:login_ui_aicycle_seta/services/process_usecase.dart';
-import 'package:login_ui_aicycle_seta/services/snackbar.dart';
-import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 enum AppMode { testEngine, collectData }
 

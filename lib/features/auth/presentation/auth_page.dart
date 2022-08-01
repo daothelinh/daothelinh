@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:login_ui_aicycle_seta/UI/login_page.dart';
-import 'package:login_ui_aicycle_seta/controller/auth_controller.dart';
+import 'package:login_ui_aicycle_seta/features/auth/presentation/widgets/login/login_page.dart';
+import 'package:login_ui_aicycle_seta/features/auth/presentation/controller/auth_controller.dart';
+import 'package:login_ui_aicycle_seta/core/values/strings.dart';
 //import 'package:flutter/cupertino.dart';
 
-import '../strings/strings.dart';
+import '../../../core/values/strings.dart';
 
 class AuthPage extends GetView<AuthController> {
   final double appBarHeight = 144;

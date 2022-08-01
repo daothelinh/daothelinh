@@ -1,6 +1,6 @@
 import 'package:get_storage/get_storage.dart';
-import 'package:login_ui_aicycle_seta/data/auth_res.dart';
-import 'damage_types.dart';
+import 'package:login_ui_aicycle_seta/features/auth/data/models/auth_res.dart';
+import '../../services/damage_types.dart';
 import 'package:login_ui_aicycle_seta/services/damage_types.dart';
 
 enum AppMode { testEngine, collectData }

@@ -5,10 +5,10 @@ import 'package:get_storage/get_storage.dart';
 import 'package:logger/logger.dart';
 import 'package:login_ui_aicycle_seta/model/restful/restful_module.dart';
 import 'package:login_ui_aicycle_seta/model/restful/restful_module_impl.dart';
-import 'package:login_ui_aicycle_seta/services/local_storage_service.dart';
-import 'package:login_ui_aicycle_seta/usecase/shared_preferences.dart';
-import 'UI/auth_page.dart';
-import 'UI/routes.dart';
+import 'package:login_ui_aicycle_seta/core/services/local_storage_service.dart';
+import 'package:login_ui_aicycle_seta/core/services/shared_pref/shared_preferences.dart';
+import 'features/auth/presentation/auth_page.dart';
+import 'routes.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

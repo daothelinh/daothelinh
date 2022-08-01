@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:login_ui_aicycle_seta/controller/change_password_controller.dart';
-import 'package:login_ui_aicycle_seta/controller/login_controller.dart';
+import 'package:login_ui_aicycle_seta/features/home/presentation/controller/change_password_controller.dart';
+import 'package:login_ui_aicycle_seta/features/auth/presentation/widgets/login/controller/login_controller.dart';
 
 class AuthBindings extends Bindings {
   @override

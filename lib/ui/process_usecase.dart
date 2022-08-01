@@ -1,11 +1,8 @@
-
 import 'package:either_dart/either.dart';
 import 'package:get/get.dart';
-import 'package:login_ui_aicycle_seta/services/snackbar.dart';
-import 'package:login_ui_aicycle_seta/usecase/failure.dart';
+import 'package:login_ui_aicycle_seta/core/failures/failure.dart';
+import 'package:login_ui_aicycle_seta/ui/snackbar.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
-
-
 
 Future<void> processUsecaseResult(
     {required Either<Failure, dynamic> result,

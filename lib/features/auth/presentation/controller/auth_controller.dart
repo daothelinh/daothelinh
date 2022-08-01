@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:login_ui_aicycle_seta/UI/routes.dart';
-import 'package:login_ui_aicycle_seta/services/local_storage_service.dart';
+import 'package:login_ui_aicycle_seta/routes.dart';
+import 'package:login_ui_aicycle_seta/core/services/local_storage_service.dart';
 import 'package:login_ui_aicycle_seta/services/snackbar.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

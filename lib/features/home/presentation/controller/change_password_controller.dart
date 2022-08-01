@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/src/simple/get_controllers.dart';
-import 'package:login_ui_aicycle_seta/controller/auth_controller.dart';
-import 'package:login_ui_aicycle_seta/services/local_storage_service.dart';
+import 'package:login_ui_aicycle_seta/features/auth/presentation/controller/auth_controller.dart';
+import 'package:login_ui_aicycle_seta/core/services/local_storage_service.dart';
 import 'package:login_ui_aicycle_seta/services/process_usecase.dart';
 import 'package:login_ui_aicycle_seta/services/snackbar.dart';
-import 'package:login_ui_aicycle_seta/usecase/change_password.dart';
+import 'package:login_ui_aicycle_seta/features/home/domain/usecases/change_password.dart';
 
 class ChangePasswordController extends GetxController {
   final ChangePassword changePassword;

@@ -1,10 +1,11 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
-import 'package:login_ui_aicycle_seta/UI/auth_page.dart';
-import 'package:login_ui_aicycle_seta/UI/home_page.dart';
+import 'package:login_ui_aicycle_seta/features/auth/presentation/auth_page.dart';
+import 'package:login_ui_aicycle_seta/features/home/home_page.dart';
 import 'package:login_ui_aicycle_seta/UI/password_resetter_page.dart';
-import 'package:login_ui_aicycle_seta/binding/auth_binding.dart';
-import 'package:login_ui_aicycle_seta/binding/repository_binding.dart';
-import 'package:login_ui_aicycle_seta/binding/usecase_binding.dart';
+import 'package:login_ui_aicycle_seta/features/auth/presentation/bindings/auth_binding.dart';
+import 'package:login_ui_aicycle_seta/repository_binding.dart';
+import 'package:login_ui_aicycle_seta/repository_binding.dart';
+import 'package:login_ui_aicycle_seta/usecase_binding.dart';
 
 class Routes {
   Routes._();

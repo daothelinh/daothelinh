@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:login_ui_aicycle_seta/common_field/common_button.dart';
 import 'package:login_ui_aicycle_seta/common_field/common_textfield.dart';
-import 'package:login_ui_aicycle_seta/controller/change_password_controller.dart';
-import 'package:login_ui_aicycle_seta/strings/strings.dart';
+import 'package:login_ui_aicycle_seta/features/home/presentation/controller/change_password_controller.dart';
+import 'package:login_ui_aicycle_seta/core/values/strings.dart';
 
 // ignore: must_be_immutable
 class PasswordResetterPage extends GetView<ChangePasswordController> {

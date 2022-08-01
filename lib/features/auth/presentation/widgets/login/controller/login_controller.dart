@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:login_ui_aicycle_seta/UI/routes.dart';
-import 'package:login_ui_aicycle_seta/data/auth_res.dart';
-import 'package:login_ui_aicycle_seta/services/local_storage_service.dart';
-import 'package:login_ui_aicycle_seta/services/logger_service.dart';
+import 'package:login_ui_aicycle_seta/routes.dart';
+import 'package:login_ui_aicycle_seta/features/auth/data/models/auth_res.dart';
+import 'package:login_ui_aicycle_seta/core/services/local_storage_service.dart';
+import 'package:login_ui_aicycle_seta/core/services/logger_service.dart';
 import 'package:login_ui_aicycle_seta/services/process_usecase.dart';
 import 'package:login_ui_aicycle_seta/services/snackbar.dart';
-import 'package:login_ui_aicycle_seta/usecase/do_login.dart';
-import 'package:login_ui_aicycle_seta/usecase/shared_preferences.dart';
+import 'package:login_ui_aicycle_seta/features/auth/domain/use_cases/do_login.dart';
+import 'package:login_ui_aicycle_seta/core/services/shared_pref/shared_preferences.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginController extends GetxController {
